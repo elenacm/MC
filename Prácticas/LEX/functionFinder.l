@@ -45,7 +45,7 @@ int main(int argc,char *argv[]){
   else
     yyin = stdin;
 
-  destiny=fopen("functions.txt","w");
+  destiny=fopen("funciones.txt","w");
   
   yylex();
   return(0);
@@ -68,7 +68,7 @@ void doxygen(char *text){
 	}
 	
 	fprintf(destiny, "/*\n * @brief \"Añade una descripción\" \n ");
-	fprintf(destiny, "* @return %s (Opcional : Descripción)\n", tipo); //Tipo devuelto por la función
+	fprintf(destiny, "* @return %s \n", tipo); //Tipo devuelto por la función
 	
 	//Saltamos los espacios y el nombre de la función hasta llegar al primer paréntesis
 	while( text[i] != '(' )
@@ -93,7 +93,7 @@ void doxygen(char *text){
 				j++; i++;			
 			}
 
-			fprintf(destiny, " * @param  %s (Opcional : Descripción)\n", params);
+			fprintf(destiny, " * @param  %s \n", params);
 			clean(params);
 		
 		}		

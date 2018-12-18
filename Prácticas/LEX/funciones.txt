@@ -1,0 +1,43 @@
+/*
+ * @brief "Añade una descripción" 
+ * @return int 
+ */
+ 
+int funcionuno () 
+ 
+/*
+ * @brief "Añade una descripción" 
+ * @return int 
+ * @param  int x  
+ */
+ 
+int funciondos ( int x ) 
+ 
+/*
+ * @brief "Añade una descripción" 
+ * @return int 
+ * @param  int aa  
+ * @param  int ba  
+ * @param  int c  
+ */
+ 
+int funciontres ( int aa , int ba , int c ) 
+ 
+/*
+ * @brief "Añade una descripción" 
+ * @return pair<int,char> 
+ * @param  int a  
+ * @param  char ba  
+ */
+ 
+pair<int,char> funcioncuatro ( int a , char ba ) 
+ 
+/*
+ * @brief "Añade una descripción" 
+ * @return void 
+ * @param  int arg  
+ * @param  char argv   
+ */
+ 
+void main ( int arg , char argv  ) 
+ 
